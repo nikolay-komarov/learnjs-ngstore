@@ -1,0 +1,6 @@
+{
+  "*.{ts,js}": ["npm run prettier:fix", "git add", "npx eslint"],
+  "*.json": ["npm run prettier:fix", "git add"],
+  "*.css": ["npm run prettier:fix", "git add"],
+  "*.html": ["npm run prettier:fix", "git add"]
+}
