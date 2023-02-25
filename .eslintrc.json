@@ -4,6 +4,7 @@
   "overrides": [
     {
       "files": ["*.ts"],
+      "plugins": ["import"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -37,7 +38,22 @@
               "match": true
             }
           }
-        ]
+        ],
+        "import/order": [
+          "error",
+          {
+            "newlines-between": "always",
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              "parent",
+              "sibling",
+              "index"
+            ]
+          }
+        ],
+        "import/newline-after-import": "error"
       }
     },
     {
